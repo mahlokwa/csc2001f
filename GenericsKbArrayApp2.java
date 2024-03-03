@@ -5,11 +5,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class GenericsKbArrayApp extends JFrame implements ActionListener {
-   private static KnowledgeBase[] genericsList;
+public class GenericsKbArrayApp2 extends JFrame implements ActionListener {
+
+    private static KnowledgeBase[] genericsList;
     private static String fileName;
 
-    public GenericsKbArrayApp() {
+    public GenericsKbArrayApp2() {
         setSize(600, 400); // Changed size for better visibility
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("GenericsKbArrayApp");
@@ -91,11 +92,8 @@ public class GenericsKbArrayApp extends JFrame implements ActionListener {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new GenericsKbArrayApp();
+                new GenericsKbArrayApp2();
             }
         });
     }
 }
-
- 
-
